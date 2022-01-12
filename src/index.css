@@ -76,7 +76,7 @@ code {
 footer {
   padding-bottom: 10px;
   padding-top: 10px;
-  position: sticky;
+
   left: 0;
   bottom: 0;
   width: 100%;
@@ -133,7 +133,9 @@ form textarea {
   height: 50px;
   font-size: 1.5rem;
 }
-
+.Home {
+  min-height: 100vh;
+}
 @media only screen and (min-width: 811px) {
   .Nav {
     display: flex;

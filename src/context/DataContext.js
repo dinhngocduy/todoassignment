@@ -15,7 +15,7 @@ export const DataProvider = ({ children }) => {
   const [editBody, setEditBody] = useState("");
 
   const { data, fetchError, isLoading } = useAxiosFetch(
-    "https://my-json-server.typicode.com/dinhngocduy/reactblog/posts"
+    "http://localhost:3500/posts"
   );
   const history = useHistory();
   useEffect(() => {

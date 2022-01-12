@@ -5,7 +5,7 @@ const Header = ({ title }) => {
   const { width } = useWindowSize();
   return (
     <header className="Header">
-      <h1>{title} Fixed</h1>
+      <h1>{title} </h1>
       {width < 768 ? (
         <FaMobileAlt className="headerIcon" />
       ) : width < 992 ? (
