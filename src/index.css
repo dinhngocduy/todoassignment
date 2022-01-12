@@ -1,13 +1,147 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.Header {
+  background-color: rgb(85, 194, 253);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 2%;
+  display: flex;
+  justify-content: space-between;
+}
+.headerIcon {
+  font-size: 50px;
+  margin-right: 10%;
+}
+.Nav {
+  background-color: rgb(52, 51, 52);
+  height: 130px;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+#search {
+  height: 50px;
+  font-size: 1.5rem;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding-left: 20px;
+}
+
+.Nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+.Home a {
+  color: black;
+  text-decoration: none;
+}
+.Nav li {
+  list-style-type: none;
+  color: white;
+  display: inline-block;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 10px;
+  text-align: center;
+  height: 100%;
+  width: 80px;
+}
+.Nav li:hover,
+.Nav li:focus,
+.Nav li:hover a,
+.Nav li:focus a {
+  background-color: #eee;
+  color: #333;
+  cursor: pointer;
+}
+footer {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(85, 194, 253);
+  width: 100%;
+}
+footer h1 {
+  text-align: center;
+}
+.newFeed {
+  background-color: wheat;
+  width: 70%;
+  margin-left: 15%;
+  padding-left: 5%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid gray;
+}
+.postTitle {
+  font-size: 2rem;
+}
+.postBody {
+  font-size: 1.5rem;
+  margin: 30px 0 30px 0;
+}
+.postPage {
+  background-color: wheat;
+  width: 70%;
+  margin-left: 15%;
+  padding-left: 5%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+}
+form input,
+textarea {
+  width: 70%;
+}
+form input {
+  height: 30px;
+}
+form textarea {
+  height: 500px;
+  margin-bottom: 50px;
+}
+.submitButton {
+  width: 20%;
+  height: 50px;
+  font-size: 1.5rem;
+}
+.Home {
+  height: 95vh;
+}
+@media only screen and (min-width: 811px) {
+  .Nav {
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+  }
+  .Nav li {
+    margin-right: 50px;
+  }
 }

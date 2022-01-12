@@ -1,0 +1,16 @@
+{
+  "posts": [
+    {
+      "id": 2,
+      "title": "My 2nd Post (Edited)aaaa",
+      "datetime": "January 12 2022 2:29:57 PM",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis consequatur expedita, assumenda similique non optio! Modi nesciunt excepturi corrupti atque blanditiis quo nobis, non optio quae possimus illum exercitationem ipsa!"
+    },
+    {
+      "id": 3,
+      "title": "My 2nd Post (Edited)",
+      "datetime": "January 12 2022 2:30:01 PM",
+      "body": "aaaaaaa"
+    }
+  ]
+}
