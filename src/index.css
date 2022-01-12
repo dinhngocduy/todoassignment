@@ -76,12 +76,13 @@ code {
 footer {
   padding-bottom: 10px;
   padding-top: 10px;
-  position: fixed;
+  position: sticky;
   left: 0;
   bottom: 0;
   width: 100%;
   background-color: rgb(85, 194, 253);
   width: 100%;
+  margin-top: 50px;
 }
 footer h1 {
   text-align: center;
@@ -132,9 +133,7 @@ form textarea {
   height: 50px;
   font-size: 1.5rem;
 }
-.Home {
-  height: 95vh;
-}
+
 @media only screen and (min-width: 811px) {
   .Nav {
     display: flex;
