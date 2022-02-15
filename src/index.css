@@ -62,8 +62,11 @@ code {
   padding-top: 1rem;
   padding-bottom: 10px;
   text-align: center;
-  height: 100%;
-  width: 80px;
+  height: 105%;
+  width: 100px;
+}
+#dropdown-basic-button {
+  margin: 0.5rem 2rem 0 0;
 }
 .Nav li:hover,
 .Nav li:focus,
@@ -88,13 +91,27 @@ footer h1 {
   text-align: center;
 }
 .newFeed {
-  background-color: wheat;
   width: 70%;
   margin-left: 15%;
   padding-left: 5%;
   padding-top: 30px;
   padding-bottom: 30px;
   border-bottom: 1px solid gray;
+}
+.checkBox {
+  position: absolute;
+  right: 20%;
+  top: 15%;
+}
+.checkBox input {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  right: 0;
+}
+
+.checkBox button {
+  margin-top: 30%;
 }
 .postTitle {
   font-size: 2rem;
@@ -115,14 +132,14 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 form input,
 textarea {
-  width: 70%;
+  width: 50%;
 }
 form input {
-  height: 30px;
+  height: 50px;
 }
 form textarea {
   height: 500px;
@@ -133,8 +150,62 @@ form textarea {
   height: 50px;
   font-size: 1.5rem;
 }
-.Home {
+.Home,
+main {
   min-height: 100vh;
+}
+
+#subNav {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-top: 80px;
+}
+
+.card .title {
+  font-size: 18px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+label {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.card button:hover,
+a:hover {
+  opacity: 0.7;
+}
+.regisForm {
+  background-color: rgb(110, 203, 234);
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 150px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 @media only screen and (min-width: 811px) {
   .Nav {

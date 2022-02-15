@@ -1,17 +1,26 @@
 import React from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useEffect } from "react/cjs/react.development";
 import { useContext } from "react";
-import DataContext from "./context/DataContext";
+import DataContext from "../context/DataContext";
 const EditPost = () => {
-  const { editTitle, setEditTitle, editBody, setEditBody, handleEdit, posts } =
-    useContext(DataContext);
+  const {
+    editTitle,
+    setEditTitle,
+    editBody,
+    setEditBody,
+    handleEdit,
+    posts,
+    editCategory,
+    setEditCategory,
+  } = useContext(DataContext);
   const { id } = useParams();
   const post = posts.find((post) => post.id == id);
   useEffect(() => {
     if (post) {
       setEditTitle(post.title);
       setEditBody(post.body);
+      setEditCategory(post.category);
     }
   }, [post, setEditTitle, setEditBody]);
   return (
@@ -26,6 +35,14 @@ const EditPost = () => {
           value={editTitle}
           onChange={(e) => setEditTitle(e.target.value)}
         />
+        <label htmlFor="postCategory">Category</label>
+        <input
+          type="text"
+          required
+          id="postCategory"
+          value={editCategory}
+          onChange={(e) => setEditCategory(e.target.value)}
+        />
         <label htmlFor="postBody">Content</label>
         <textarea
           type="text"
@@ -36,7 +53,7 @@ const EditPost = () => {
         ></textarea>
         <button
           type="submit"
-          className="submitButton"
+          className="btn btn-dark btn-lg btn-block"
           onClick={() => handleEdit(post.id)}
         >
           Edit

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
-import DataContext from "./context/DataContext";
+import DataContext from "../context/DataContext";
 const Nav = () => {
   const { search, setSearch } = useContext(DataContext);
   return (
@@ -28,7 +28,7 @@ const Nav = () => {
           <Link to="/post">Post</Link>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <Link to="/about">Account</Link>
         </li>
       </ul>
     </nav>

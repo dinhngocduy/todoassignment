@@ -1,5 +1,6 @@
 import React from "react";
 import Post from "./Post";
+
 const Feed = ({ posts }) => {
   return (
     <section className="feed">
@@ -10,11 +11,10 @@ const Feed = ({ posts }) => {
           fontSize: "3rem",
         }}
       >
-        New Feed
+        CURRENT MISSIONS
       </h1>
-      {posts.map((post) => (
-        <Post post={post} />
-      ))}
+
+      <Post posts={posts} />
     </section>
   );
 };
